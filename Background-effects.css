@@ -1,0 +1,18 @@
+body {
+    background-color:darkblue
+}
+
+.page-header {
+    background-image:linear-gradient(to right, purple, coral);
+    border-radius:16px;
+    text-align:center;
+    color:white;
+} 
+
+.fact-card{
+background-color:rgb(14,14,65);
+border-radius:12px;
+color:white;
+
+}
+
