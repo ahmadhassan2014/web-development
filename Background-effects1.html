@@ -1,0 +1,95 @@
+<html>
+    <head> <title>backgrounds-efects</title>
+        <style>
+            #div1{
+                width: 100px;
+                height: 100px;
+                background-color:red;
+                animation: moveleft;
+                animation-duration:3s;
+                animation-iteration-count:4;
+                animation-delay:2s;
+                animation-direction:alternate-reverse;
+
+            }
+            @keyframes moveleft{
+             from{
+             transform: translateX(0)
+             }
+             to{
+                transform: translateX(300px)
+
+             }
+             }
+
+            #div2{
+                width: 100px;
+                height: 100px;
+                background-color:yellow;
+                animation: colorchange 3s 2
+            }
+
+            @keyframes colorchange{
+                0%{
+                    background-color:green
+                }
+                 50%{
+                    background-color:blue
+                }
+                 75%{
+                    background-color:brown
+                }
+                 100%{
+                    background-color:pink
+                }
+            }
+
+              #div3{
+                width: 100px;
+                height: 100px;
+                background-color:blue;
+                border-radius:50px;
+                animation: bounce 3s 2
+              }
+              @keyframes moveleft{
+             0, 100%{
+             : translatey(0)
+             }
+             50%{
+                transform: translatey(-200px)
+             }
+             }
+             
+            #div1{
+                width: 100px;
+                height: 100px;
+                background-color:aqua;
+                animation: pulse 3s 2
+            }
+            
+            @keyframes pulse{
+                0%{
+                    transform: scale(1);
+                }
+                 50%{
+                    transform: scale(1.5);
+                 }
+                 
+                
+                
+                 100%{
+                    transform: scale(1);
+                 }
+                }
+        </style>
+    </head>
+        
+    <body>
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        
+    </body>
+</html>
+
