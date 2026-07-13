@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Advanced selectors</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            h1 { color: lightgreen}
+        h1 + p{
+            background:skyblue;
+            border-radius:8px;
+        
+            color:aqua
+        }
+
+        ul > li{
+            list-style:none;
+            font-size: 18px;
+            font-weight:bold;
+            color:blueviolet;
+            width: 260px;
+            background:rgb(48, 100, 48);
+            border-radius: 8px;
+        }
+
+        ul li:nth-child(3){
+            background:violet;
+            color: pink;
+        }
+
+        p::first-letter{
+            font-size: 40px;
+            color:bisque
+
+        }
+
+        a{
+            color:aqua;
+            text-decoration:none;
+            font-size: 15px;
+            border: 2px solid pink;
+
+
+        }
+
+        a hover{
+            background:lightblue;
+            color:white
+        }
+        </style>
+    </head>
+    <p>Pick your favirote dish and dine in</p>
+    <ul>
+        <li>pizza</li>
+        <li>burger</li>
+        <li>tacos-chef's special</li>
+        <li>noodles</li>
+        <li>ice-cream</li>
+    </ul>
+    <div class="links">
+        <a href="#">order now</a>
+    </div>
+</html>
