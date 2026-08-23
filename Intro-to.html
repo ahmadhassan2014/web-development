@@ -1,47 +1,12 @@
 <html>
-    <head>
-        <title>Intro to html</title>
-        <style>
-
-        /* universal selecter-applies to everything on the page*/
-        * {
-            font-size:16px
-        }
-
-        /* Element selector*/
-        body {
-            background-color:lightblue;
-
-
-        }
-
-        h1{
-            color:darkcyan
-        }
-
-        h2{
-            color:blueviolet
+    <body>
+        <h1 id="result"></h1>
+        <script>
+            var x = 79;
+            var y = 47;
+            var sum = y+x
+            document.getElementById("result").innerHTML = sum;
+        </script>
         
-        }
-
-        p{
-            color:azure
-        }
-
-        /* class selector*/
-        .my detail{
-            color:darkolivegreen;
-            font-weight:bold
-        }
-
-        /*Id selector*/
-        #my-card {
-         background:lightgray
-        }
-
-        
-            
-        
-        </style>
-    </head>
+    </body>
 </html>
