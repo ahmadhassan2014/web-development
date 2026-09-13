@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>My zoo</title>
+    
+    <style>
+        body{
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1{
+            color: #ff5a43;
+        }
+
+        #zoo{
+            border: 1px solid #ff5a43;
+            margin: 6px 0;
+            padding: 8px 12px;
+            border-radius: 6pc;
+            text-align: left;
+        }
+
+        button{
+            background-color: #ff5a43;
+            color: white;
+            padding: 10px 24px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+
+    </style>
+    </head>
+    <body>
+        <h1>My zoo</h1>
+        <p>Using javascript and the dom add animals to each cage</p>
+
+        <div id="zoo">
+   <div class="zone">Zone 1: <span id="zone1"></span></div>
+   <div class="zone">Zone 2: <span id="zone2"></span></div>
+   <div class="zone">Zone 3: <span id="zone3"></span></div>
+   <div class="zone">Total animals: <span id="tootal"></span></div>
+
+        </div>
+
+
+        <br>
+        <button onclick="openzoo()">Open the zoo</button>
+        
+
+        <script>
+
+            function openzoo(){
+                document.getElementById("zone1").innerHTML = "lion";
+                document.getElementById("zone2").innerHTML = "Elephant";
+                document.getElementById("zone3").innerHTML = "Penguin";
+                document.getElementById("total").innerHTML = "3";
+
+                document.getElementById("zoo").style.backgroundcolor = "lion";
+            }
+        </script>
+
+    </body>
+    
+</html>

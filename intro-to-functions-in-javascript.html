@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <p>A function can access variables defined inside the function:</p>
+        <button type="button" onclick="multiply()">Click Me!</button>
+
+
+        <p id="result"></p>
+        <p id="element"></p>
+        <script>
+            var b = 5;
+
+
+            function multiply() {
+                var a = 4;
+                document.getElementById("result").innerHTML = b * a;
+            }
+            document.getElementById("element").innerHTML = a;
+        </script>
+    </body>
+</html>
