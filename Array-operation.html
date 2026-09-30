@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <tittle>My playlist sorter</tittle>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: lavender;
+        }
+
+        h1,
+        h3 {
+            color: darkviolet;
+        }
+
+        .boc {
+            background: white;
+            color: darkviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container py-4"></div>
+
+
+    <h1 class="mb-1">My playlist</h1>
+
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3 class="card-tittle">Song Name A-Z</h3>
+            <div id="nameResult" class="box p-3 mt-3 rounded"></div>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3 class="card-tittle">Play counts (Most Played)</h3>
+            <div id="countResult" class="box p-3 mt-3 rounded"></div>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3 class="card-tittle">Label Every Play Cout</h3>
+            <div id="labelResult" class="box p-3 mt-3 rounded"></div>
+        </div>
+    </div>
+
+    <script>
+        var songs = ["zoom", "bounce", "glow", "rush", "spark"];
+        var plays = [150, 300, 200, 400, 250];
+
+        document.getElementById("nameResult").innerHTML = "songs: " + 
+        songs.sort();
+
+         document.getElementById("countResult").innerHTML = "Plays: " + plays.sort(function(a,b){return b-a;});
+
+
+ document.getElementById("labelResult").innerHTML =plays.map(function(element){return element +" plays";});
+
+    </script>
+
+
+</body>
+
+</html>

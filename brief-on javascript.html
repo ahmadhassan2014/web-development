@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>My Game Porfile</title>
+        <style>
+            body {
+                text-align: center;
+            }
+
+            h1 {
+                color: navy;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My Game Porfile></h1>
+        <botton onclick="showProfile"()>Show Profile</botton>
+
+        <div>Name: <span id="name"></span></div>
+        <div>Score: <span id="name"></span></div>
+        <div>Rank: <span id="name"></span></div>
+        <div>Stars: <span id="name"></span></div>
+
+        <script>
+            
+            function showprofile() {
+                let name = "Ahmad";
+                let score = 75;
+
+                let rank;
+                if (score >=80) {
+                    rank = "Gold";
+                } else if (score >=50) {
+                    rank = "silver";
+                } else {
+                    rank = "Bronze";
+                }
+
+                let stars = "";
+                let count = 0;
+                while (count < 5) {
+                    stars = stars + "*";
+                    count = count + 1;
+                }
+
+
+                 document.getElementById("name").innerHTML     = name;
+                 document.getElementById("score").innerHTML    = myScore
+                 document.getElementById("rank").innerHTML     = rank;
+                 document.getElementById("stars").innerHTML    = stars;
+
+
+
+            }
+        </script>
+
+
+        
+    </body>
+</html>
