@@ -1,0 +1,47 @@
+<html>
+
+<body>
+    <h1>Lucky Draw</h1>
+
+    <input type="text" id="name" placeholder="Enter your name">
+    <p id="msg-name"></p>
+
+    <input type="number" id="guess" placeholder="Enter your Number">
+    <p id="msg-number"></p>
+
+    <button onclick="checkForm">Try my Luck!</button>
+    <p id="result"></p>
+    <script>
+        function checkForm() {
+            let name = document.getElementById("name").value;
+            let guess = document.getElementById("guess").value;
+
+            if (name == "") {
+                document.getElementById("msg-name").innerHTML = "Enter your name!";
+            } else {
+                document.getElementById("msg-name").innerHTML = "Great name!";
+            }
+
+            if (guess == "") {
+                document.getElementById("msg-guess").innerHTML = "Enter your guess!";
+            } else {
+                document.getElementById("msg-guess").innerHTML = "Guess saved!";
+
+                if (name != "" && guess != "") {
+                    let lucky = Math.floor(Math.random() * 5) + 1;
+
+
+                    if (guess == lucky) {
+                        document.getElementById("result").innerHTML = "You win, " + name + "!";
+                    } else {
+                        document.getElementById("result").innerHTML = "Try again, " + name + "!";
+                    }
+                }
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
