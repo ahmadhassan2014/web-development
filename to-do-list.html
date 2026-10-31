@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>My to-do list</title>
+
+        <style>
+         body {
+           font-family: Arial;
+           background-color: #eaf6f6;
+           text-align: center;
+           padding: 30px;
+       }
+
+
+       .container {
+           background-color: white;
+           width: 350px;
+           margin: auto;
+           padding: 25px;
+           border-radius: 12px;
+       }
+
+
+       h2 {
+           color: #287271;
+       }
+
+
+       input {
+           padding: 10px;
+           width: 65%;
+           border: 1px solid gray;
+           border-radius: 5px;
+       }
+
+
+       button {
+           padding: 10px;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+       }
+
+
+       .addBtn {
+           background-color: #287271;
+           color: white;
+       }
+
+
+       ul {
+           padding: 0;
+           list-style: none;
+       }
+
+
+       li {
+           background-color: #e0f2f1;
+           padding: 10px;
+           margin-top: 10px;
+           border-radius: 5px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+       }
+
+
+       li button {
+           background-color: #e76f51;
+           color: white;
+       }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>My to-to list</h2>
+
+            <form id="myForm">
+                <input type="text" id="myinput"
+                placeholder="Enter a Task">
+
+                <button class="btn" onclick="addTask() " type="button">
+                    Add
+                </button>
+                
+            </form>
+
+            <ul id="myList"></ul>
+
+        </div>
+
+        <script>
+            function addTask() {
+                var myForm = document.getElementById("myform");
+                var myInpet = document.getElementById("myinput");
+                var myList = document.getElementById("mylist");
+
+                var li = document.createElement("li");
+                li.innerHTML = myInput.value;
+
+                var btn = document.createElement("button");
+                btn.innerHTML = "Delete";
+
+                btn.onclick = function() {
+                    li.remove();
+                };
+
+                li.appendChild(btn);
+                mylist.appendChild(li);
+
+                myInpet.value = "";
+            }
+        </script>
+    </body>
+    
+</html>
