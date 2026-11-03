@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Color App</title>
+<style>
+body {
+  text-align: center;
+  margin-top: 100px;
+  font-family: Arial;
+  background: lightblue;
+}
+h1 {
+  font-size: 50px;
+}
+button {
+  padding: 10px 20px;
+  background: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+</style>
+</head>
+<body>
+
+<h1 id="name">Ahmad</h1>
+<button onclick="changeColor()">Change Color</button>
+
+<script>
+function changeColor() {
+  let colors = ["red", "blue", "green", "purple", "orange"];
+  let random = Math.floor(Math.random() * colors.length);
+  document.getElementById("name").style.color = colors[random];
+}
+</script>
+
+</body>
+</html>
