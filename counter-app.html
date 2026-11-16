@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Counter App</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background: #eaf2ff;
+            padding-top: 100px;
+        }
+
+        .box {
+            background: white;
+            padding: 30px;
+            margin: auto;
+            width: 250px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            color: blue;
+            font-size: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: blue;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h2>Counter App</h2>
+        <h1 id="count">0</h1>
+
+        <button onclick="increase()">+</button>
+        <button onclick="decrease()">-</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+
+    <script>
+        let count = 0;
+
+        function increase() {
+            count++;
+            document.getElementById("count").innerHTML = count;
+        }
+
+        function decrease() {
+            count--;
+            document.getElementById("count").innerHTML = count;
+        }
+
+        function reset() {
+            count = 0;
+            document.getElementById("count").innerHTML = count;
+        }
+    </script>
+
+</body>
+</html>
